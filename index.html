@@ -1,587 +1,195 @@
 <!DOCTYPE html>
-<html lang="fr-CA">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Découvrez nos tisanes artisanales inspirées de traditions africaines. 100% naturel, sans caféine. Livraison gratuite au Canada à partir de 45$. Montréal.">
-  <meta name="keywords" content="tisane, infusion, kinkéliba, bien-être, africain, Montréal, Canada">
-  <meta name="theme-color" content="#8b6f47">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Tisanes & Plantes Bien-être Africaines | KAWĀLI">
-  <meta property="og:description" content="Infusions artisanales 100% naturelles. Inspiration africaine, fait au Québec.">
-  <meta property="og:image" content="khamare.webp">
-  <meta property="og:url" content="https://kawali-traditions.com/">
-  <meta property="og:type" content="business.business">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tisanes Bien-être Africaines | KAWĀLI">
-  <meta name="twitter:description" content="100% naturel, fait au Québec. Livraison partout au Canada.">
-  
-  <!-- Preload Resources -->
-  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-  <link rel="preload" as="image" href="khamare.webp">
-  
-  <!-- DNS Prefetch -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//api.klaviyo.com">
-  
-  <title>Tisanes & Plantes Bien-être Africaines | KAWĀLI Montréal</title>
-  
-  <!-- CRITICAL CSS (Inline) -->
-  <style>
-    /* Reset & Base */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 16px; scroll-behavior: smooth; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', sans-serif;
-      color: #333;
-      background: #fff;
-      line-height: 1.6;
-    }
-    
-    /* Typography */
-    h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 1em 0 0.5em; }
-    h2 { font-size: 2rem; font-weight: 700; line-height: 1.2; margin: 1em 0 0.5em; }
-    h3 { font-size: 1.5rem; font-weight: 600; margin: 0.8em 0 0.4em; }
-    p { margin: 1em 0; line-height: 1.6; }
-    
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      background: #8b6f47;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      min-height: 48px;
-    }
-    .btn:hover { background: #7a5f3d; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139,111,71,0.3); }
-    .btn:active { transform: translateY(0); }
-    
-    /* Images */
-    img { max-width: 100%; height: auto; display: block; }
-    
-    /* Layout */
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    
-    /* Mobile First */
-    @media (max-width: 768px) {
-      h1 { font-size: 1.8rem; }
-      h2 { font-size: 1.5rem; }
-      h3 { font-size: 1.1rem; }
-    }
-  </style>
-  
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KAWALI – Boutique de thés haut de gamme. Mélanges naturels et bio soigneusement sélectionnés." />
+  <title>KAWALI – Thés d'Exception</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- PRELOAD BANNER -->
-  <div class="preload-banner">
-    <div class="banner-content">
-      🚚 Livraison gratuite à partir de 45$ +
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#" class="logo" aria-label="KAWALI – Accueil">
+        <span class="logo__mark">✦</span>
+        <span class="logo__name">KAWALI</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#catalogue" class="nav__link">Catalogue</a>
+        <a href="#about" class="nav__link">Notre Histoire</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Ouvrir le panier" aria-expanded="false">
+        <svg class="cart-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-btn__badge" id="cartBadge" aria-live="polite">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="logo">
-          <h1 style="margin: 0; font-size: 1.8rem;">KAWĀLI</h1>
-          <p style="margin: 0; font-size: 0.8rem; color: #8b6f47;">Bien-être Africain</p>
-        </div>
-        
-        <nav class="nav-main" role="navigation" aria-label="Navigation principale">
-          <ul>
-            <li><a href="#produits">Produits</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-actions">
-          <button class="cart-btn" aria-label="Panier (0 articles)">
-            🛒 <span class="cart-count">0</span>
-          </button>
-          <button class="hamburger-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-hidden="true">
-      <ul>
-        <li><a href="#produits">Produits</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.instagram.com/kawali.trad" target="_blank">Instagram</a></li>
-      </ul>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+      <a href="#catalogue" class="mobile-nav__link">Catalogue</a>
+      <a href="#about" class="mobile-nav__link">Notre Histoire</a>
+      <a href="#contact" class="mobile-nav__link">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-banner" aria-label="Section héro">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <span class="hero-badge">🌿 100% Naturel • Fait au Québec</span>
-          
-          <h1>Infusions artisanales pour un bien-être africain authentique</h1>
-          
-          <p class="hero-subheader">
-            Découvrez nos tisanes inspirées de traditions ancestrales. 
-            Sans artifices. Sans compromis. Juste du bien-être pur.
-          </p>
-          
-          <!-- TRUST BADGES -->
-          <div class="trust-badges">
-            <div class="badge">
-              <span class="badge-icon">✓</span>
-              <span class="badge-text">100% Naturel<br/>Sans arômes</span>
-            </div>
-            <div class="badge">
-              <span class="badge-icon">🚚</span>
-              <span class="badge-text">Livraison gratuite<br/>à partir de 45$</span>
-            </div>
-            <div class="badge">
-              <span class="badge-icon">❤️</span>
-              <span class="badge-text">Satisfait ou<br/>remboursé</span>
-            </div>
-          </div>
-          
-          <!-- CTA -->
-          <div class="cta-group">
-            <a href="#produits" class="btn btn-primary">
-              Découvrir nos infusions →
-            </a>
-            <p class="cta-micro">👇 4 produits • 100% satisfait</p>
-          </div>
-        </div>
+  <!-- ═══════════════════════ HERO ═════════════════════════ -->
+  <section class="hero" aria-label="Présentation KAWALI">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+    </div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Rituals for the soul</p>
+      <h1 class="hero__title">L'art du thé,<br /><em>réinventé.</em></h1>
+      <p class="hero__sub">Des mélanges naturels soigneusement sélectionnés pour nourrir votre corps et apaiser votre esprit.</p>
+      <div class="hero__actions">
+        <a href="#catalogue" class="btn btn--primary">Découvrir la collection</a>
+        <a href="#about" class="btn btn--ghost">Notre histoire</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
 
-        <div class="hero-image">
-          <picture>
-            <source media="(max-width: 768px)" srcset="bloomint.webp" type="image/webp">
-            <source media="(min-width: 769px)" srcset="bloomint.webp" type="image/webp">
-            <img 
-              src="bloomint.webp" 
-              alt="Hero KAWĀLI - Bouquet d'infusions Bloom Intime pour bien-être féminin"
-              width="800"
-              height="600"
-              loading="eager"
-              fetchpriority="high"
-              class="hero-main-img"
-            />
-          </picture>
-          <div class="hero-overlay"></div>
+  <!-- ═══════════════════════ VALEURS ══════════════════════ -->
+  <section class="values" aria-label="Nos valeurs">
+    <div class="container values__grid">
+      <div class="value-pill">
+        <span class="value-pill__icon">🌿</span>
+        <span class="value-pill__label">100% Naturel</span>
+      </div>
+      <div class="value-pill">
+        <span class="value-pill__icon">✦</span>
+        <span class="value-pill__label">Sélection Rigoureuse</span>
+      </div>
+      <div class="value-pill">
+        <span class="value-pill__icon">🫶</span>
+        <span class="value-pill__label">Fabriqué avec Amour</span>
+      </div>
+      <div class="value-pill">
+        <span class="value-pill__icon">🌱</span>
+        <span class="value-pill__label">Engagé & Écoresponsable</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CATALOGUE ════════════════════ -->
+  <section class="catalogue" id="catalogue" aria-label="Catalogue produits">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-header__kicker">Notre sélection</p>
+        <h2 class="section-header__title">La Collection KAWALI</h2>
+        <p class="section-header__desc">Chaque mélange est une invitation au voyage – élaboré avec intention, préparé avec amour.</p>
+      </header>
+      <div class="products-grid" id="productsGrid" role="list" aria-label="Produits disponibles">
+        <!-- Injecté par JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═════════════════════════ -->
+  <section class="about" id="about" aria-label="Notre histoire">
+    <div class="container about__inner">
+      <div class="about__text">
+        <p class="section-header__kicker">Notre histoire</p>
+        <h2 class="about__title">Nées d'une passion,<br /><em>cultivées avec soin.</em></h2>
+        <p class="about__body">KAWALI est née d'une conviction simple : les plantes ont le pouvoir de nous reconnecter à l'essentiel. Chaque référence de notre catalogue est le fruit d'une recherche minutieuse sur les principes actifs, les synergies botaniques et les rituels de préparation.</p>
+        <p class="about__body">Nous travaillons en partenariat direct avec des producteurs engagés pour vous garantir une qualité irréprochable, du champ à votre tasse.</p>
+        <a href="#catalogue" class="btn btn--primary">Explorer la collection</a>
+      </div>
+      <div class="about__cards" role="list">
+        <div class="about-card" role="listitem">
+          <span class="about-card__icon" aria-hidden="true">🌿</span>
+          <h3 class="about-card__title">100% Naturel</h3>
+          <p class="about-card__text">Ingrédients bruts, sans additifs ni arômes artificiels.</p>
+        </div>
+        <div class="about-card" role="listitem">
+          <span class="about-card__icon" aria-hidden="true">✦</span>
+          <h3 class="about-card__title">Sélection Rigoureuse</h3>
+          <p class="about-card__text">Chaque plante testée pour sa pureté et sa concentration en principes actifs.</p>
+        </div>
+        <div class="about-card" role="listitem">
+          <span class="about-card__icon" aria-hidden="true">💛</span>
+          <h3 class="about-card__title">Fait avec Amour</h3>
+          <p class="about-card__text">Des recettes pensées par des herboristes passionnés.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS SECTION -->
-  <section id="produits" class="products-section" aria-label="Section produits">
-    <div class="container">
-      <div class="section-header">
-        <h2>Découvrez nos infusions</h2>
-        <p>Des tisanes simples, pour un quotidien plus intentionnel</p>
-      </div>
-
-      <div class="products-grid" role="list">
-        <!-- PRODUCT 1: Calm Digest -->
-        <article class="product-card" role="listitem">
-          <div class="product-image">
-            <picture>
-              <source srcset="calmdig.webp" type="image/webp">
-              <img 
-                src="calmdig.webp" 
-                alt="Calm Digest - Tisane digestive 50g - Mélange kinkéliba menthe verveine"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
-            </picture>
-            <span class="product-badge">En stock</span>
-          </div>
-          <div class="product-info">
-            <h3>Calm Digest</h3>
-            <p class="product-subtitle">Thé en vrac 50g</p>
-            <div class="product-rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-count">(24 avis)</span>
-            </div>
-            <p class="product-description">Aide à la digestion après les repas. Apaise les ballonnements.</p>
-            <div class="product-footer">
-              <span class="price">$16.99 CAD</span>
-              <button class="btn-add-cart" data-product="calm-digest" aria-label="Ajouter Calm Digest au panier">
-                Ajouter ↓
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PRODUCT 2: Bloom Intime -->
-        <article class="product-card" role="listitem">
-          <div class="product-image">
-            <picture>
-              <source srcset="bloomint.webp" type="image/webp">
-              <img 
-                src="bloomint.webp" 
-                alt="Bloom Intime - Sachets de thé 15 - Bien-être féminin africain"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
-            </picture>
-            <span class="product-badge">En stock</span>
-          </div>
-          <div class="product-info">
-            <h3>Bloom Intime</h3>
-            <p class="product-subtitle">15 sachets de thé</p>
-            <div class="product-rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-count">(18 avis)</span>
-            </div>
-            <p class="product-description">Bien-être féminin naturel. Confort et sérénité.</p>
-            <div class="product-footer">
-              <span class="price">$17.99 CAD</span>
-              <button class="btn-add-cart" data-product="bloom-intime" aria-label="Ajouter Bloom Intime au panier">
-                Ajouter ↓
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PRODUCT 3: Kinkéliba -->
-        <article class="product-card" role="listitem">
-          <div class="product-image">
-            <picture>
-              <source srcset="caalmdig.webp" type="image/webp">
-              <img 
-                src="caalmdig.webp" 
-                alt="Kinkéliba - Feuilles séchées 30g - Plante africaine traditionnelle"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
-            </picture>
-            <span class="product-badge">En stock</span>
-          </div>
-          <div class="product-info">
-            <h3>Kinkéliba</h3>
-            <p class="product-subtitle">Feuilles séchées 30g</p>
-            <div class="product-rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-count">(12 avis)</span>
-            </div>
-            <p class="product-description">Plante traditionnelle pour la détoxification naturelle.</p>
-            <div class="product-footer">
-              <span class="price">$12.99 CAD</span>
-              <button class="btn-add-cart" data-product="kinkeliba" aria-label="Ajouter Kinkéliba au panier">
-                Ajouter ↓
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- PRODUCT 4: Infuseur -->
-        <article class="product-card" role="listitem">
-          <div class="product-image">
-            <picture>
-              <source srcset="khamare.webp" type="image/webp">
-              <img 
-                src="khamare.webp" 
-                alt="Infuseur à thé réutilisable - Accessoire écologique KAWĀLI"
-                width="400"
-                height="400"
-                loading="lazy"
-              />
-            </picture>
-            <span class="product-badge">Accessoire</span>
-          </div>
-          <div class="product-info">
-            <h3>Infuseur Réutilisable</h3>
-            <p class="product-subtitle">Acier inoxydable</p>
-            <div class="product-rating">
-              <span class="stars">★★★★★</span>
-              <span class="rating-count">(42 avis)</span>
-            </div>
-            <p class="product-description">Accessoire durable pour préparer vos infusions parfaitement.</p>
-            <div class="product-footer">
-              <span class="price">$6.99 CAD</span>
-              <button class="btn-add-cart" data-product="infuseur" aria-label="Ajouter Infuseur au panier">
-                Ajouter ↓
-              </button>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="apropos" class="about-section" aria-label="À propos de KAWĀLI">
-    <div class="container">
-      <div class="section-header">
-        <h2>Née de Montréal, enracinée en Afrique</h2>
-        <p>KAWĀLI c'est l'héritage africain rencontré à Montréal</p>
-      </div>
-
-      <div class="story-grid">
-        <div class="story-card">
-          <div class="story-icon">🏙️</div>
-          <h3>Fondée à Montréal</h3>
-          <p>Créée par des passionnées de la diaspora africaine, KAWĀLI partage nos racines avec fierté depuis Montréal.</p>
-          <span class="story-detail">📍 Collecte main-propre au Métro Snowdon</span>
-        </div>
-
-        <div class="story-card">
-          <div class="story-icon">🌍</div>
-          <h3>Traditions Africaines</h3>
-          <p>Nos tisanes sont sélectionnées pour leurs bienfaits reconnus depuis des générations en Afrique de l'Ouest.</p>
-          <span class="story-detail">✓ Recettes authentiques, préservées</span>
-        </div>
-
-        <div class="story-card">
-          <div class="story-icon">✨</div>
-          <h3>Qualité Garantie</h3>
-          <p>100% naturel, sans arômes, sans conservateurs. Chaque tisane est testée et sélectionnée avec soin.</p>
-          <span class="story-detail">Made in Québec avec fierté</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section class="testimonials-section" aria-label="Avis clients">
-    <div class="container">
-      <h2>Ce que nos clients disent</h2>
-      
-      <div class="testimonials-grid">
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"J'ai adoré cette tisane! Vraiment efficace pour la digestion. Je recommande!"</p>
-          <p class="testimonial-author">— Marie P., Montréal</p>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Produit de qualité, livraison rapidement. Client satisfait!"</p>
-          <p class="testimonial-author">— Jean B., Québec</p>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Merci pour votre service! Les tisanes sont incroyables."</p>
-          <p class="testimonial-author">— Sophie L., Laval</p>
-        </div>
-      </div>
-
-      <div class="testimonial-cta">
-        <p>4.8/5 ⭐ basé sur 42+ avis clients</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER SECTION -->
-  <section class="newsletter-section" id="newsletter" aria-label="Infolettre KAWĀLI">
-    <div class="container">
-      <div class="newsletter-inner">
-        <h2>Restez connecté</h2>
-        <p>Recevez nos nouvelles tisanes et promotions exclusives directement par email</p>
-        
-        <form class="newsletter-form" id="newsletterForm">
-          <input 
-            type="email" 
-            placeholder="Votre adresse email" 
-            required
-            aria-label="Adresse email pour l'infolettre"
-          />
-          <button type="submit" class="btn">S'INSCRIRE</button>
-        </form>
-        
-        <p class="newsletter-privacy">
-          📧 Nous respectons votre vie privée. 
-          <a href="#privacy">Lire notre politique</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PAYMENT METHODS SECTION -->
-  <section class="payment-section">
-    <div class="container">
-      <h3>Paiement 100% sécurisé</h3>
-      
-      <div class="payment-icons">
-        <div class="payment-badge">🔒 Visa</div>
-        <div class="payment-badge">🔒 Mastercard</div>
-        <div class="payment-badge">🔒 Apple Pay</div>
-        <div class="payment-badge">🔒 Amex</div>
-      </div>
-      
-      <p style="text-align: center; margin-top: 12px; color: #999; font-size: 0.85rem;">
-        Encryption SSL 256-bit • Données protégées
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>KAWĀLI</h4>
-          <p>Tisanes et plantes bien-être inspirées de traditions africaines</p>
-          <a href="https://www.instagram.com/kawali.trad" target="_blank" rel="noopener" class="social-link" aria-label="Suivre KAWĀLI sur Instagram">
-            📸 @kawali.trad
+  <!-- ═══════════════════════ FOOTER ════════════════════════ -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo"><span>✦</span> KAWALI</p>
+        <p class="footer__tagline">Des rituels qui font du bien.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.14a8.17 8.17 0 004.78 1.52V7.21a4.86 4.86 0 01-1.01-.52z"/></svg>
           </a>
         </div>
-
-        <div class="footer-col">
-          <h4>Informations</h4>
-          <ul>
-            <li><a href="#contact">Contactez-nous</a></li>
-            <li><a href="#privacy">Politique de confidentialité</a></li>
-            <li><a href="#conditions">Conditions d'utilisation</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Livraison</h4>
-          <p>Partout au Canada</p>
-          <p>OU</p>
-          <p>Collecte en main propre à Montréal</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Paiement</h4>
-          <p>💳 Visa, Mastercard, Apple Pay</p>
-          <p>🔒 100% Sécurisé</p>
-        </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 KAWĀLI • Tous droits réservés</p>
+      <div class="footer__contact">
+        <h3 class="footer__heading">Contactez-nous</h3>
+        <a href="mailto:hello@kawali.shop" class="footer__link">hello@kawali.shop</a>
+        <a href="https://wa.me/33600000000" class="footer__link footer__link--wa" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
       </div>
+      <div class="footer__nav">
+        <h3 class="footer__heading">Navigation</h3>
+        <a href="#catalogue" class="footer__link">Catalogue</a>
+        <a href="#about" class="footer__link">Notre Histoire</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 KAWALI. Tous droits réservés.</p>
+      <p>Conçu avec soin 🍃</p>
     </div>
   </footer>
 
-  <!-- STICKY ADD TO CART (Mobile) -->
-  <div class="sticky-add-to-cart" id="stickyAtc">
-    <button class="btn" id="addToCartSticky">
-      Ajouter au panier
-    </button>
-  </div>
+  <!-- ═══════════════════════ PANIER ════════════════════════ -->
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Votre panier">
+    <div class="cart-drawer__overlay" id="cartOverlay"></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <h2 class="cart-drawer__title">Mon Panier</h2>
+        <button class="cart-drawer__close" id="cartClose" aria-label="Fermer le panier">&times;</button>
+      </div>
+      <div class="cart-drawer__body" id="cartBody"></div>
+      <div class="cart-drawer__footer" id="cartFooter"></div>
+    </div>
+  </aside>
 
-  <!-- NEWSLETTER POPUP (Exit Intent) -->
-  <div class="newsletter-popup" id="newsletterPopup">
-    <div class="popup-overlay"></div>
-    
-    <div class="popup-content">
-      <button class="popup-close" aria-label="Fermer">✕</button>
-      
-      <div class="popup-inner">
-        <h2>🎁 Bienvenue chez KAWĀLI!</h2>
-        <p class="popup-subtext">Recevez <strong>10% de réduction</strong> sur votre première commande</p>
-        
-        <form class="popup-form" id="popupForm">
-          <input 
-            type="email" 
-            placeholder="Votre adresse email" 
-            required
-            aria-label="Email pour code promo"
-          />
-          <button type="submit" class="btn btn-primary">Obtenir mon code</button>
-        </form>
-        
-        <p class="popup-disclaimer">
-          📧 Nous respectons votre vie privée.
-        </p>
-      </div>
-      
-      <div class="popup-benefits">
-        <span>✓ 100% Naturel</span>
-        <span>✓ Livraison gratuite</span>
-        <span>✓ Paiement sécurisé</span>
-      </div>
+  <!-- ═══════════════════════ MODALE PRODUIT ═══════════════ -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" aria-label="Fermer">&times;</button>
+      <div class="modal__content" id="modalContent"></div>
     </div>
   </div>
 
-  <!-- SCHEMA MARKUP -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "KAWĀLI",
-    "url": "https://kawali-traditions.com",
-    "logo": "https://kawali-traditions.com/logo.png",
-    "description": "Tisanes et plantes bien-être inspirées de traditions africaines",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Métro Snowdon",
-      "addressLocality": "Montréal",
-      "addressRegion": "QC",
-      "addressCountry": "CA"
-    },
-    "sameAs": [
-      "https://www.instagram.com/kawali.trad"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "availableLanguage": ["fr"]
-    }
-  }
-  </script>
+  <!-- ═══════════════════════ TOAST ═════════════════════════ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "KAWĀLI",
-    "image": "https://kawali-traditions.com/logo.png",
-    "description": "Boutique de tisanes bien-être 100% naturelles",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Métro Snowdon",
-      "addressLocality": "Montréal",
-      "addressRegion": "QC",
-      "addressCountry": "CA"
-    },
-    "openingHours": "Mo-Su 10:00-18:00",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "42"
-    }
-  }
-  </script>
-
-  <!-- Defer non-critical scripts -->
-  <script defer src="script.js"></script>
-  
-  <!-- Google Analytics (async) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
